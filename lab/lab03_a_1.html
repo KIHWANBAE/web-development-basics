@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bing Crosby</title>
+    <meta charset="utf-8">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr 1fr;
+            grid-template-rows: 1fr 0.1fr 0.8fr 0.3fr 1fr;
+            grid-gap: 15px;
+            padding: 10px;
+            height: 90vh;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: justify;
+            padding: 20px 0;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            float: left;
+            text-align: left;
+            font-size: 100pt;
+            font-weight: bold;
+            line-height: 1em;
+        }
+
+        .item4 {
+            font-size: 15pt;
+        }
+
+        .item6 {
+            border-top: solid 0.5px;
+            border-bottom: solid 0.5px;
+        }
+
+        .item7 {
+            font-size: 9pt;
+            font-style: italic;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .item9 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+
+        #item10 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            column-count: 2;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        #item10 p:first-letter {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            line-height: 0.8em;
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">Bing <br>Crosby</div>
+        <div class="item2"></div>
+        <div class="item3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean fermentum est vel nisi faucibus aliquet. Ut aliquet rhoncus rhoncus.
+            Vestibulum vehicula lectus urna, at molestie eros suscipit a.
+            Etiam et orci a nisl varius vulputate in et nulla.
+            it. Aenean fermentum est vel nisi faucibus aliquet. Ut aliquet rhoncus rhoncus.
+        </div>
+        <div class="item4">
+            With a new album released and his first SNL appearance
+            just days away, the Washington native talks about music,
+            fame, and golf.</div>
+        <div class="item5"></div>
+        <div class="item6">
+            "We'd dub the one that came off best into the final transcription.
+            It gave us a chance to ad lib as we wanted, knowing that excess ad libbing
+            coult be sliced from the final product"
+        </div>
+        <div class="item7">by kihwan</div>
+        <div class="item8"></div>
+        <div class="item9">
+            Faucibus dolor. Morbi eget molestie massa, sed mattis turpis.
+            Pellentesque dignissim augue quis venenatis semper. N
+            ullam non urna eu ante fermentum pulvinar. Sed varius mattis
+            tellus varius malesuada.
+
+            dub the one that came off best into the final transcription.
+            It gave us a chance to ad lib as we wanted, knowing that excess ad libbing
+            coult be sliced from. eu ante fermentum pulvinar. Sed varius mattis
+            tellus varius.
+
+            Vestibulum vehicula lectus urna, at molestie eros suscipit a.
+            Etiam et orci a nisl varius vulputate in et nulla.
+            it. Aenean fermentum est vel nisi faucibus aliquet. Ut aliquet rhoncus rhoncus.
+            nce to ad lib as we wanted, knowing that.
+
+        </div>
+        <div id="item10">
+            <p>Vivamus eu faucibus dolor. Morbi eget molestie massa, sed mattis turpis.
+                Pellentesque dignissim augue quis venenatis semper.
+                Nullam non urna eu ante fermentum pulvinar. Sed varius mattis tellus varius malesuada.
+                Quisque accumsan vehicula ipsum eget facilisis. In accumsan vel libero eu auctor.
+                Vestibulum ornare massa eget erat posuere, non suscipit urna scelerisque.
+                Etiam eu mi in justo molestie consectetur quis ac erat.
+                Fusce ipsum mauris, elementum vitae leo ut, dictum sodales ante.
+                Proin a nibh eget mi convallis laoreet.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+    </div>
+</body>
+
+</html>
