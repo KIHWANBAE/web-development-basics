@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Staatliches" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 'Staatliches', cursive;
+      }
+
+      @media only screen and (max-width: 767px) {
+        /* for mobile phones */
+
+        [class*="col-"] {
+          width: 100%;
+        }
+        aside {
+          display: none;
+        }
+        .images {
+          width: 100%;
+          height: 60vw;
+        }
+        .portfolio h2 {
+          text-align: center;
+        }
+        header {
+          text-align: center;
+          font-size: 1.5em;
+        }
+        nav p {
+          font-family: 'KoHo', sans-serif;
+          padding: 0px;
+          margin-top: 13px;
+          font-size: 2em;
+        }
+        nav img {
+          margin: 0;
+          padding: 0;
+          display: inline;
+          width: 35%;
+          clip-path: circle(80% at 50% 50%);
+        }
+        .menu {
+          text-align: center;
+        }
+        .menu ul {
+          list-style-type: none;
+          margin: 5px;
+          padding: 0px;
+        }
+        .menu li {
+          margin: 5px;
+          border: 0;
+          padding: 8px;
+          display: inline;
+          background-color : darkgray;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .menu li:hover {
+          background-color: gray;
+        }
+        .container {
+          padding: 0px;
+        }
+        .circ {
+          position: relative;
+          width: 50%;
+          float: left;
+          text-align: center;
+          font-size: 2.2em;
+        }
+        .circ img {
+          opacity: .4;
+          width: 180px;
+          display: inline;
+          clip-path: circle(48.6% at 50% 50%);
+        }
+
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1079px) {
+        /* For Tablets */
+
+        .col-1 { width: 16.66% }
+        .col-2 { width: 33.33% }
+        .col-3 { width: 50.00% }
+        .col-4 { width: 66.66% }
+        .col-5 { width: 83.34% }
+        .col-6 { width: 100% }
+
+        aside {
+          display: none;
+        }
+
+        .images {
+          width: 100%;
+          height: 30vw;
+        }
+        .portfolio h2 {
+          text-align: center;
+        }
+        header {
+          padding: 0px;
+          text-align: center;
+          font-size: 5.5vw;
+        }
+        header h1 {
+          margin: .1em;
+        }
+        nav {
+          position: relative;
+        }
+        nav p {
+          font-family: 'KoHo', sans-serif;
+          padding: 0px;
+          margin-top: 13px;
+          font-size: 2em;
+        }
+        nav img {
+          display: inline;
+          width: 20%;
+          clip-path: circle(80% at 50% 50%);
+        }
+        .menu {
+          float: left;
+          text-align: center;
+        }
+        .menu ul {
+          width: 100%;
+          position: absolute;
+          top: 32.5%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          list-style-type: none;
+          margin: 0px;
+          padding: 5px;
+        }
+        .menu li {
+          margin: 3vw;
+          border: 0;
+          font-size: 1.3em;
+          padding: 14px;
+          display: inline;
+          background-color : darkgray;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .menu li:nth-child(2) {
+          margin-right: 35vw;
+        }
+        .menu li:hover {
+          background-color: gray;
+        }
+        .container {
+        padding: 25px;
+        }
+        .circ {
+          position: relative;
+          width: 50%;
+          float: left;
+          text-align: center;
+          font-size: 2.5em;
+        }
+        .circ img {
+          opacity: .4;
+          width: 180px;
+          display: inline;
+          clip-path: circle(48.6% at 50% 50%);
+        }
+
+      }
+
+      @media only screen and (min-width: 1080px) {
+        /* For Computers*/
+
+        .col-l-1 { width: 16.66% }
+        .col-l-2 { width: 33.33% }
+        .col-l-3 { width: 50.00% }
+        .col-l-4 { width: 66.66% }
+        .col-l-5 { width: 83.34% }
+        .col-l-6 { width: 100% }
+
+        .images {
+          width: 100%;
+          height: 20vw;
+        }
+
+        .portfolio h2 {
+          text-align: left;
+          margin-left: 3%;
+          font-size: 3em;
+        }
+        header {
+          padding: 0px;
+          text-align: center;
+          font-size: 5.5vw;
+        }
+        header h1 {
+          margin: .1em;
+        }
+        header p {
+          margin: .1em;
+        }
+
+        section {
+          font-size: 2em;
+        }
+        nav {
+          position: relative;
+        }
+        nav p {
+          position: absolute;
+          top: 28%;
+          left: 13%;
+          font-family: 'KoHo', sans-serif;
+          padding: 0px;
+          margin-top: 13px;
+          font-size: 3em;
+        }
+        nav img {
+          float: left;
+          margin-left: 2%;
+          margin-top: 1%;
+          display: inline;
+          width: 8%;
+          clip-path: circle(80% at 50% 50%);
+        }
+        .menu {
+          float: left;
+          text-align: center;
+        }
+        .menu ul {
+          width: 50%;
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          list-style-type: none;
+          margin: 0px;
+          padding: 5px;
+        }
+        .menu li {
+          margin: 4%;
+          border: 0;
+          font-size: 1.8em;
+          padding: 14px;
+          display: inline;
+          background-color : darkgray;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .menu li:hover {
+          background-color: gray;
+        }
+        .container {
+          padding: 25px;
+        }
+        aside {
+          text-align: left;
+          font-size: 2em;
+        }
+        aside div {
+          display: table;
+
+        }
+        aside .container {
+          display: table-row;
+        }
+        .text {
+          width: 80%;
+          text-align: center;
+          padding-top: 1.2em;
+        }
+        aside [class*="col-"] {
+          text-align: left;
+          padding: 0px;
+        }
+        aside .images {
+          padding-top: .3em;
+          padding-bottom: .3em;
+          float: left;
+          width: 20%;
+          height: auto;
+        }
+      }
+
+
+      /* Common CSS */
+      [class*="col-"] {
+        float: left;
+        padding: 10px;
+        border: 0px;
+      }
+      section {
+        text-align: center;
+        color: cornflowerblue;
+      }
+      .circ {
+        position: relative;
+        width: 50%;
+        float: left;
+        text-align: center;
+        font-size: 2.2em;
+      }
+      .circ img {
+        opacity: .4;
+        width: 60%;
+        display: inline;
+        clip-path: circle(48.6% at 50% 50%);
+      }
+
+      .icon {
+        float: right;
+        display: inline;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        margin-bottom: .3em;
+      }
+      .centered {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .portfolio [class*="col-"] {
+        text-align: center;
+        padding: 0px;
+      }
+      .caption {
+        width: 60%;
+        text-align: left;
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="col-6 col-l-6 menu">
+      <div>
+        <img alt="logo" src="https://bootstraplogos.com/wp-content/uploads/edd/2017/11/logo-51.png">
+        <p>Haejoon Design</p>
+        <ul>
+          <li>HOME</li>
+          <li>WORK</li>
+          <li>BLOG</li>
+          <li>ABOUT</li>
+        </ul>
+      </div>
+    </nav>
+    <header class="col-6 col-l-6">
+      <h1>food waste Control</h1>
+      <p> The design for web-app.</p>
+    </header>
+    <section class="col-6 col-l-6">
+      <h2>For reducing food waste problem</h2>
+      <p>FROM ECOCITY, VANCOUVER</p>
+    </section>
+    <div>
+      <div class="col-3 col-l-3">
+        <div class="circ">
+          <img alt="Blue Circle" src="Blue.jpeg">
+          <div class="centered">DESIGN</div>
+        </div>
+        <div class="circ">
+          <img alt="Green Circle" src="Green.jpeg">
+          <div class="centered">DEVELOP</div>
+        </div>
+      </div>
+      <div class="col-3 col-l-3">
+        <div class="circ">
+          <img alt="Pink Circle" src="Pink.jpeg">
+          <div class="centered">SUPPORT</div>
+        </div>
+        <div class="circ">
+          <img alt="Purple Circle" src="Purple.jpeg">
+          <div class="centered">HOST</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-l-4">
+      <div class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="col-3 col-l-3">
+          <div class="container">
+            <img class="images" src="https://i1.wp.com/blogs.cfainstitute.org/investor/files/2018/05/18-Chart-Crimes-and-Misdemeanors.png?resize=940%2C575&ssl=1" alt="First Image">
+            <div class="caption">Caption 1</div>
+            <img class="icon" alt="Blue Circle" src="Blue.jpeg">
+            <img class="icon" alt="Green Circle" src="Green.jpeg">
+            <img class="icon" alt="Pink Circle" src="Pink.jpeg">
+            <img class="icon" alt="Purple Circle" src="Purple.jpeg">
+          </div>
+          <div class="container">
+            <img class="images" src="https://i1.wp.com/blogs.cfainstitute.org/investor/files/2017/01/Mitigating-Short-Exposure-Learning-from-Others-Mistakes.png?fit=300%2C300&ssl=1" alt="Second Image">
+            <div class="caption">Caption 2</div>
+            <img class="icon" alt="Blue Circle" src="Blue.jpeg">
+            <img class="icon" alt="Green Circle" src="Green.jpeg">
+            <img class="icon" alt="Pink Circle" src="Pink.jpeg">
+            <img class="icon" alt="Purple Circle" src="Purple.jpeg">
+          </div>
+        </div>
+        <div class="col-3 col-l-3">
+          <div class="container">
+            <img class="images" src="https://img.itch.zone/aW1hZ2UvMTg1OTEwLzEwMDI4NTEucG5n/original/WIK7K%2F.png" alt="Third Image">
+            <div class="caption">Caption 3</div>
+            <img class="icon" alt="Blue Circle" src="Blue.jpeg">
+            <img class="icon" alt="Green Circle" src="Green.jpeg">
+            <img class="icon" alt="Pink Circle" src="Pink.jpeg">
+            <img class="icon" alt="Purple Circle" src="Purple.jpeg">
+          </div>
+          <div class="container">
+            <img class="images" src="https://www.lisbonproject.com/public/images/projects/20170215173808-ng8LKNEO_banner.jpg" alt="Fourth Image">
+            <div class="caption">Caption 4</div>
+            <img class="icon" alt="Blue Circle" src="Blue.jpeg">
+            <img class="icon" alt="Green Circle" src="Green.jpeg">
+            <img class="icon" alt="Pink Circle" src="Pink.jpeg">
+            <img class="icon" alt="Purple Circle" src="Purple.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="col-2 col-l-2">
+      <h2>Side Bar</h2>
+        <div class="col-l-6" id="aside-table">
+          <div class="container">
+            <img alt="1st" class="images" src="https://www.venturestream.co.uk/wp-content/uploads/2016/09/Square.jpg">
+            <div class="text">Caption 3</div>
+          </div>
+          <div class="container">
+            <img alt="2nd" class="images" src="http://papers.co/wallpaper/papers.co-vc20-triangle-world-red-pattern-8-wallpaper.jpg?download=true">
+            <div class="text">Caption 4</div>
+          </div>
+          <div class="container">
+            <img alt="3rd" class="images" src="https://static-s.aa-cdn.net/img/ios/975038474/a374f95af5868983b684f23c40b60b71?v=1">
+            <div class="text">Caption 5</div>
+          </div>
+          <div class="container">
+            <img alt="4th" class="images" src="https://i0.wp.com/i.imgur.com/mtzcN.gif">
+            <div class="text">Caption 6</div>
+          </div>
+        </div>
+    </aside>
+    <footer class="col-6 col-l-6">
+      <p>
+        Copyright Reserved to Haejoon Choi.
+      </p>
+    </footer>
+  </body>
+</html>
